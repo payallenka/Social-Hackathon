@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Translate Example</title>
+</head>
+<body>
+    <h1>Translate Text</h1>
+
+    <div id="google_translate_element"></div>
+
+    <h2>Text to Translate:</h2>
+    <p id="textToTranslate">Hello, world!</p>
+
+    <h2>Translated Text:</h2>
+    <p id="translatedText"></p>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+
+        function translateText() {
+            var textToTranslate = document.getElementById("textToTranslate").textContent;
+            var translatedTextElement = document.getElementById("translatedText");
+            translatedTextElement.textContent = textToTranslate; // Replace with API call or custom translation logic
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <p id="translatedText">payal</p>
+</body>
+</html>

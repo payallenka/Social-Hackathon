@@ -1,4 +1,4 @@
-# Social-Hackathon
+# Social-Hackathon at CMRIT,Bangalore
 Topic: Rural Development
 
 Details:
